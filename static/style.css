@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+td, th, tr {
+    border: 1px solid white;
+}
+
+table {
+    width: 90%;
+}
+
+#consonantFeatureSettings, #vowelFeatureSettings {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

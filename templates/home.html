@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Phonemizer</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1>Phonemizer</h1>
+    <h2 id="consonantsTitle">Consonants</h2>     
+    <p id="uncategorizedConsonants">Uncategorized</p>
+    <div id="consonantFeatureSettings">
+    </div>
+    <br/>
+    <form>
+        <p style="display: inline">allow duplicates</p>
+        <label><input type="radio" name="duplicates" id="allowduplicateconsonants" class="forconsonants">yes</label>
+        <label><input type="radio" name="duplicates" class="forconsonants">no</label>
+    </form>
+    <form>
+        <p style="display: inline">allow complex consonants</p>
+        <label><input type="radio" name="complex" id="allowcomplexconsonants" class="forconsonants">yes</label>
+        <label><input type="radio" name="complex" class="forconsonants">no</label>
+    </form>
+    <br/>
+    <table id="consonants">
+    </table>
+    <script src="{{url_for('static', filename='consonants.js')}}"></script>
+
+    <br/>
+
+    <h2 id="vowelsTitle">Vowels</h2>     
+    <p id="uncategorizedVowels">Uncategorized</p>
+    <div id="vowelFeatureSettings">
+    </div>
+    <br/>
+    <form>
+        <p style="display: inline">allow duplicates</p>
+        <label><input type="radio" name="duplicates" id="allowduplicatevowels" class="forvowels">yes</label>
+        <label><input type="radio" name="duplicates" class="forvowels">no</label>
+    </form>
+    <form>
+        <p style="display: inline">allow diphthongs</p>
+        <label><input type="radio" name="complex" id="allowcomplexvowels" class="forvowels">yes</label>
+        <label><input type="radio" name="complex" class="forvowels">no</label>
+    </form>
+    <br/>
+    <table id="vowels">
+    </table>
+    <script src="{{url_for('static', filename='vowels.js')}}"></script>
+</body>
